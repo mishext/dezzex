@@ -65,31 +65,27 @@ function SecondRow() {
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th>RECENT PROJECTS</th>
+            <th>CREATED</th>
+            <th>REPORTER</th>
+            <th>DUE</th>
+            <th>STATS</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td colSpan={2}>Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
+        {Data.map((e) => (
+          <tbody key={e.id}>
+            <tr>
+              <td>
+                <img src={e.img} className="imgData" />
+                {e.project}
+              </td>
+              <td>{e.created}</td>
+              <td>{e.reporter}</td>
+              <td>{e.due}</td>
+              <td>{e.stats}</td>
+            </tr>
+          </tbody>
+        ))}
       </Table>
       {/* <div className="just">
         <p>RECENT PROJECTS</p>

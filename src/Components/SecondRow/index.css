@@ -10,13 +10,13 @@
 .table {
   --bs-table-accent-bg: none;
   --bs-table-striped-color: white;
-  /* --bs-table-striped-bg: rgba(53, 65, 94, 1); */
-  /* --bs-table-active-bg: rgba(53, 65, 94, 1); */
-  /* --bs-table-hover-bg: rgba(53, 65, 94, 1); */
   background-color: rgba(53, 65, 94, 1);
-  color: transparent;
-  /* border-spacing: 10px !important; */
-  /* padding: 50px !important; */
+  /* color: white; */
+  font: normal normal 900 Avenir;
+  letter-spacing: 1.4px;
+  color: rgba(173, 185, 216, 1);
+  text-transform: uppercase;
+  opacity: 1;
 }
 
 .tableHead {
