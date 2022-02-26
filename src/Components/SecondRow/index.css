@@ -1,0 +1,58 @@
+.SecondRowContainer {
+  padding-left: 80px;
+  padding-top: 50px;
+  width: 80%;
+}
+.table-bordered > :not(caption) {
+  border-width: 0 !important;
+}
+
+.table {
+  --bs-table-accent-bg: none;
+  --bs-table-striped-color: white;
+  /* --bs-table-striped-bg: rgba(53, 65, 94, 1); */
+  /* --bs-table-active-bg: rgba(53, 65, 94, 1); */
+  /* --bs-table-hover-bg: rgba(53, 65, 94, 1); */
+  background-color: rgba(53, 65, 94, 1);
+  color: transparent;
+  /* border-spacing: 10px !important; */
+  /* padding: 50px !important; */
+}
+
+.tableHead {
+  border-top: none;
+  color: rgba(173, 185, 216, 1) !important;
+}
+/* .table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: red !important;
+} */
+
+.companiesLogo {
+  width: 30px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.tr {
+  padding-bottom: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.just {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+.imgData {
+  width: 30px;
+}
+table tr {
+  padding-right: 40px;
+}
