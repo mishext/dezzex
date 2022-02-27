@@ -1,0 +1,31 @@
+.ChartsContainer {
+  margin: 0px !important;
+  background-color: #2a3550;
+}
+
+.pieCharContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  opacity: 1;
+  padding-left: 100px;
+  opacity: 1;
+  letter-spacing: 0.9px;
+  color: #adb9d8;
+  text-transform: uppercase;
+}
+
+svg {
+  width: 200px;
+  height: 200px;
+}
+.pieCharContainer p {
+  margin: 0px;
+}
+.chartsNum {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-top: 0px;
+}

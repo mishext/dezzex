@@ -44,20 +44,20 @@ const Data = [
   },
 ];
 
-const DataList = Data.map((proj) => (
-  <div key={proj.id} className="dataContainer">
-    <div>
-      <img src={proj.img} className="imgData" />
-      {proj.project}
-    </div>
+// const DataList = Data.map((proj) => (
+//   <div key={proj.id} className="dataContainer">
+//     <div>
+//       <img src={proj.img} className="imgData" />
+//       {proj.project}
+//     </div>
 
-    {/* <p>{proj.project}</p> */}
-    <p>{proj.created}</p>
-    <p>{proj.reporter}</p>
-    <p>{proj.due}</p>
-    <p>{proj.stats}</p>
-  </div>
-));
+//     {/* <p>{proj.project}</p> */}
+//     <p>{proj.created}</p>
+//     <p>{proj.reporter}</p>
+//     <p>{proj.due}</p>
+//     <p>{proj.stats}</p>
+//   </div>
+// ));
 
 function SecondRow() {
   return (
@@ -82,7 +82,9 @@ function SecondRow() {
               <td>{e.created}</td>
               <td>{e.reporter}</td>
               <td>{e.due}</td>
-              <td>{e.stats}</td>
+              <td className="statsButton">
+                <p>{e.stats}</p>
+              </td>
             </tr>
           </tbody>
         ))}
