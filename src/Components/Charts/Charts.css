@@ -1,20 +1,23 @@
 .ChartsContainer {
   margin: 0px !important;
   background-color: #2a3550;
-}
-
-.pieCharContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
+  border: 1px solid #21293c;
+  border-radius: 6px;
   opacity: 1;
-  padding-left: 100px;
+}
+.pieCharContainer {
+  background-color: white;
+}
+/* .pieCharContainer {
+  align-items: flex-start;
+  width: 300px;
+  opacity: 1;
+  margin-left: 100px;
   opacity: 1;
   letter-spacing: 0.9px;
   color: #adb9d8;
   text-transform: uppercase;
-}
+} */
 
 svg {
   width: 200px;
@@ -28,4 +31,14 @@ svg {
   font-weight: bold;
   color: white;
   padding-top: 0px;
+}
+.wwchart {
+  display: block;
+  width: 248px;
+  /* height: 400px; */
+  background-color: #35415e;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  padding: 10px;
 }

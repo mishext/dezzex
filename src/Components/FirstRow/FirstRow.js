@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./index.css";
+import "./FirstRow.css";
 import { Button, Card, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Person1 from "../Images/person1.png";
@@ -7,6 +7,24 @@ import Person2 from "../Images/person2.png";
 import Person3 from "../Images/person3.png";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
+const Calendar = [
+  { time: "6 AM", Line: <p className="CalendarPChange">FOSH</p> },
+  { time: "6 AM", Line: <hr className="hr" /> },
+  { time: "6 AM", Line: <p className="CalendarPChange">FOSH</p> },
+  { time: "6 AM", Line: <hr className="hr" /> },
+  { time: "6 AM", Line: <p className="CalendarPChange">FOSH</p> },
+  { time: "6 AM", Line: <hr className="hr" /> },
+  { time: "6 AM", Line: <p className="CalendarPChange">FOSH</p> },
+  { time: "6 AM", Line: <hr className="hr" /> },
+  { time: "6 AM", Line: <p className="CalendarPChange">FOSH</p> },
+  { time: "6 AM", Line: <hr className="hr" /> },
+  { time: "6 AM", Line: <p className="CalendarPChange">FOSH</p> },
+  { time: "6 AM", Line: <hr className="hr" /> },
+  { time: "6 AM", Line: <p className="CalendarPChange">FOSH</p> },
+  { time: "6 AM", Line: <hr className="hr" /> },
+  { time: "6 AM", Line: <p className="CalendarPChange">FOSH</p> },
+  { time: "6 AM", Line: <hr className="hr" /> },
+];
 const Members = [
   { id: 0, Image: Person1 },
   { id: 1, Image: Person2 },
@@ -25,12 +43,21 @@ function Todo({ todo, index, markTodo, removeTodo }) {
         {todo.text}
       </span>
       <div>
-        <Button variant="outline-success" onClick={() => markTodo(index)}>
-          ✓
+        <Button
+          className="todoButton"
+          variant="outline-success"
+          onClick={() => markTodo(index)}
+        >
+          i
         </Button>
-        <Button variant="outline-danger" onClick={() => removeTodo(index)}>
-          ✕
+        <Button
+          className="todoButton"
+          variant="outline-danger"
+          onClick={() => removeTodo(index)}
+        >
+          :
         </Button>
+        {/* <span className="options-btn">:</span> */}
       </div>
     </div>
   );
@@ -118,7 +145,7 @@ function FirstRow() {
         </div>
       </div>
       <div className="cardsContainer">
-        <Card className="firstCard" style={{ width: "13rem" }}>
+        <Card className="firstCard" style={{ width: "16rem" }}>
           <Card.Img
             variant="top"
             src={require("../Images/card1.png")}
@@ -132,7 +159,7 @@ function FirstRow() {
           </Card.Body>
         </Card>
 
-        <Card className="SecondCard" style={{ width: "13rem" }}>
+        <Card className="SecondCard" style={{ width: "16rem" }}>
           <Card.Img
             variant="top"
             src={require("../Images/card2.png")}
@@ -146,6 +173,14 @@ function FirstRow() {
           </Card.Body>
         </Card>
       </div>
+      {/* <div className="CalendarFixed">
+        {Calendar.map((e) => (
+          <div className="CalendarsContainer">
+            <p className="CalendarP">{e.time}</p>
+            <span className="CalendarSpan">{e.Line}</span>
+          </div>
+        ))}
+      </div> */}
     </div>
   );
 }

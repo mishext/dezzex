@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./SecondRow.css";
 import Table from "react-bootstrap/Table";
 import Company1 from "../Images/cp1.png";
 import Company2 from "../Images/cp2.png";

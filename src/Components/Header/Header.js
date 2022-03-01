@@ -1,9 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
-import "./index.css";
+import "./Header.css";
 import ProfilePic from "../Images/profilepic.png";
-import Home from "../Images/home.png";
-import Calendar from "../Images/calendar.png";
 
 function Header() {
   return (

@@ -1,42 +1,63 @@
-import React from "react";
-import { PieChart, Pie } from "recharts";
-import "./index.css";
+import React, { Component } from "react";
+import { Chart } from "primereact/chart";
+import LineCharts from "../LineCharts/LineCharts.js";
+import "./Charts.css";
 
-const Charts = () => {
-  // Sample data
-  const data = [
-    { name: "Geeksforgeeks", students: 200, color: "red" },
-    { name: "Technical scripter", students: 400, color: "green" },
-    { name: "Geek-i-knack", students: 400, color: "red" },
-    { name: "Geek-o-mania", students: 300, color: "#D79AD7" },
-  ];
+export default class Charts extends Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <div className="ChartsContainer">
-      <div className="pieCharContainer">
-        <p>PENDING TASKS</p>
-        <p className="chartsNum">36</p>
-        <PieChart width={500} height={200} className="PieChart">
-          {data.map((e) => (
-            <Pie
-              data={data}
-              dataKey="students"
-              outerRadius={200}
-              innerRadius={150}
-              fill={e.color}
-            />
-          ))}
-          <Pie
-            data={data}
-            dataKey="students"
-            outerRadius={150}
-            innerRadius={130}
-            fill="#C776C7"
-          />
-        </PieChart>
+    this.chartData = {
+      // labels: ["Gramma", "Traget", "Cambr"],
+      datasets: [
+        {
+          data: [80, 50, 100],
+          backgroundColor: ["#D79AD7", "#FFAAB9", "#9FDFCD"],
+          hoverBackgroundColor: ["#C776C7", "#36A2EB", "#FFCE56"],
+        },
+        {
+          data: [80, 50, 100],
+          backgroundColor: ["#C776C7", "#FFAAB9", "#88C6B4"],
+          hoverBackgroundColor: ["#C776C7", "#36A2EB", "#FFCE56"],
+        },
+      ],
+    };
+
+    this.lightOptions = {
+      plugins: {
+        legend: {
+          labels: {
+            color: "#495057",
+          },
+        },
+      },
+    };
+  }
+
+  render() {
+    return (
+      <div className="wwchart">
+        <p className="chartsP">PENDING TASKS</p>
+        <p className="chartsNumb">36</p>
+        <Chart
+          type="doughnut"
+          data={this.chartData}
+          options={this.lightOptions}
+          style={
+            {
+              // width: "20%",
+              // backgroundColor: "#35415E",
+              // borderRadius: "10px",
+              // marginRight: "10px",
+              // marginBottom: "40px",
+              // padding: "10px",
+            }
+          }
+        />
       </div>
-    </div>
-  );
-};
+      // </div>
 
-export default Charts;
+      // </div>
+    );
+  }
+}

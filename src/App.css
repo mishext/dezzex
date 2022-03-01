@@ -1,3 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
+.AppContainer {
+  display: flex;
+  /* justify-content: ; */
+  flex-direction: row;
+}
+
+.AppComponents {
+  display: flex;
+  flex-direction: column;
+}

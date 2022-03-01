@@ -1,0 +1,56 @@
+.CalendarFixed {
+  background-color: #2a3550;
+
+  /* margin-top: 49px; */
+}
+.CalendarsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding-left: 100px; */
+}
+.CalendarsContainer .CalendarPChange,
+.CalendarSpan,
+.CalendarP {
+  font-size: 20px;
+  color: white;
+}
+.CalendarP {
+  padding-right: 10px;
+}
+.hr {
+  /* border: 1px solid red; */
+  background-color: gray;
+  height: 2px;
+  width: 300px;
+  margin-left: 10px;
+}
+.Calendar {
+  font-size: 16px;
+  color: #adb9d8;
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+
+.CalendarDay {
+  margin-top: 0px;
+  font-size: 21px;
+  color: #ffffff;
+}
+.timeamorpm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.timeamorpm p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #adb9d8;
+  margin: 0px;
+}
+
+.pmoram {
+  font-size: 10px !important;
+  padding-bottom: 9.3px;
+}

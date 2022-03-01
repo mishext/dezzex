@@ -1,0 +1,8 @@
+.AllChartsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 300px;
+  background-color: #2a3550;
+  /* width: 81%; */
+}

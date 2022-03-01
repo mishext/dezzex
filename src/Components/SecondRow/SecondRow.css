@@ -2,8 +2,11 @@
   padding-left: 80px;
   padding-top: 50px;
   padding-bottom: 10px;
-  width: 81%;
+  /* width: 81%; */
   background-color: #2a3550;
+}
+.SecondRowContainer Table {
+  width: 95%;
 }
 /* The Table background and border */
 .table-bordered > :not(caption) {
@@ -52,12 +55,6 @@
   padding-bottom: 10px !important;
   margin-bottom: 10px !important;
 } */
-
-.just {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
 .dataContainer {
   display: flex;

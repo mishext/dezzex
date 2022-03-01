@@ -1,25 +1,36 @@
 * {
-  padding: 0px;
   /* box-sizing: inherit; */
   font-size: 0.7rem;
 }
 
 .FirstRowContainer {
-  display: flex;
-  width: 81%;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* text-align: center; */
   padding-top: 50px;
-  justify-content: flex-start;
+  /* row-gap: 40px; */
+  /* display: flex; */
+  /* width: 81%; */
+  /* flex-direction: row;
+  padding-top: 50px;
+  justify-content: space-between;
+  justify-items: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  text-align: flex-start; */
   background-color: #2a3550;
 }
 .cardsContainer {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-  padding-left: 50px;
+  /* align-items: baseline; */
+  padding-left: 100px;
 }
 .cardsContainer p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-bottom: 0px;
   margin-bottom: 4px;
 }
@@ -32,28 +43,40 @@
   flex: none !important;
 }
 .cardLogo {
-  width: 30px !important;
+  width: 40px !important;
   margin-bottom: 35px;
 }
 .cardLogo2 {
   width: 42px !important;
+  background-color: white;
+  padding: 5px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-radius: 5px;
   margin-bottom: 35px;
 }
+.cardLogo2 .card-img,
+.card-img-top {
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
+
 .firstCard {
   background-color: rgba(242, 188, 158, 1) !important;
   border-radius: 25px !important;
   padding: 10px;
+  padding-bottom: 40px;
   margin-right: 20px;
 }
 .SecondCard {
   background-color: rgba(146, 199, 232, 1) !important;
   border-radius: 25px !important;
   padding: 10px;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 .containers {
-  margin-left: 100px;
-  width: 35%;
+  padding-left: 100px;
+  /* width: 40%; */
 }
 .addButton {
   font-size: 10px;
@@ -71,6 +94,23 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+
+  /* height: 10px; */
+}
+.card-body {
+  /* border-radius: 1px !important; */
+  padding: 3px !important;
+}
+.todoButton {
+  /* font-size: 10px; */
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+  padding-right: 3px !important;
+  padding-left: 3px !important;
+  margin: 2px;
+
+  /* padding: 5px !important; */
 }
 .todoToo {
   display: flex;
@@ -104,4 +144,15 @@
 }
 .SecondCard .progress {
   height: 0.4rem;
+}
+
+.todo {
+  color: rgba(255, 255, 255, 0.438);
+}
+
+.options-btn {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  padding-left: 5px;
 }

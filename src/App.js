@@ -2,15 +2,23 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import FirstRow from "./Components/FirstRow/FirstRow";
 import SecondRow from "./Components/SecondRow/SecondRow";
-import Charts from "./Components/Charts/Charts";
+import Calendars from "./Components/Calendar/Calendars";
+import ChartsContainer from "./Components/ChartsContainer/ChartsContainer";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <FirstRow />
-      <SecondRow />
-      <Charts />
+      <div className="AppContainer">
+        <div className="AppComponents">
+          <FirstRow />
+          <SecondRow />
+          <ChartsContainer />
+        </div>
+        <div className="AppCalendar">
+          <Calendars />
+        </div>
+      </div>
     </div>
   );
 }
